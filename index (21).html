@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>هودي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#05091C;--navy:#0A1433;--navy2:#13204D;--line:#24336B;--cta:#2447E0;--cta2:#1B38B8;--mut:#8D99C2;--lt:#F5F6FA;--err:#E5484D;--f:"Readex Pro","Segoe UI",Tahoma,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);background:#fff;color:var(--ink);line-height:1.7;padding-bottom:78px;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a,button,input,select,textarea{font-family:inherit}
+:focus-visible{outline:3px solid var(--cta);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.ann{background:var(--navy);color:#fff;text-align:center;font-size:14px;padding:8px 12px;font-weight:600}
+.top{padding:14px 0;border-bottom:1px solid #E6E8F0;text-align:center;font-weight:700;font-size:20px}
+.hero{padding:20px 0 40px}
+.hg{display:grid;gap:22px}
+.shot{position:relative;background:#fff}
+.shot img{width:100%;height:auto;mix-blend-mode:multiply}
+.badge{position:absolute;top:10px;inset-inline-start:0;background:var(--cta);color:#fff;font-weight:700;border-radius:999px;padding:6px 16px;font-size:15px}
+h1{font-size:clamp(32px,8vw,48px);line-height:1.2;margin-bottom:8px}
+.tag{color:#586079;margin-bottom:18px;max-width:38ch}
+.pr{display:flex;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.pr b{font-size:46px;line-height:1}
+.pr span{font-size:20px;font-weight:600}
+.pr s{color:#8A90A5;font-size:20px;margin-inline-start:8px}
+.szl{color:#586079;font-size:14px;margin-bottom:18px}
+.btn{display:flex;align-items:center;justify-content:center;background:var(--cta);color:#fff;border:0;border-radius:14px;padding:15px 26px;font-size:18px;font-weight:700;cursor:pointer;min-height:56px;text-decoration:none;width:100%}
+.btn:hover{background:var(--cta2)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.trust{list-style:none;padding:0;margin-top:22px;display:grid;gap:0;border:1px solid #E6E8F0;border-radius:14px}
+.trust li{padding:12px 16px;border-bottom:1px solid #E6E8F0}
+.trust li:last-child{border:0}
+.trust b{display:block;font-size:15px}
+.trust span{color:#586079;font-size:13px}
+.dark{background:var(--navy);color:#fff;padding:44px 0}
+h2{font-size:26px;line-height:1.3;margin-bottom:20px}
+.dg{display:grid;gap:18px}
+.dt .im{aspect-ratio:1;border-radius:16px;background-color:#fff;background-repeat:no-repeat;background-size:300%;margin-bottom:10px}
+.dt b{display:block;font-size:18px}
+.dt p{color:var(--mut);font-size:15px}
+.sec{padding:40px 0}
+.rev{background:var(--lt);border-radius:14px;padding:16px;margin-bottom:12px}
+.rev small{color:#586079}
+#order{background:var(--navy);color:#fff;padding:44px 0}
+.card{max-width:520px;margin:0 auto}
+form{display:grid;gap:16px}
+.f{display:grid;gap:6px;font-weight:600;font-size:15px}
+input[type=text],input[type=tel],input[type=number],select,textarea{background:var(--ink);border:1.5px solid var(--line);border-radius:12px;color:#fff;font-size:16px;padding:13px;min-height:50px;width:100%}
+textarea{min-height:90px}
+input::placeholder{color:#6772A0}
+fieldset{border:0;padding:0;display:flex;gap:8px;flex-wrap:wrap}
+legend{font-weight:600;font-size:15px;margin-bottom:8px;padding:0}
+fieldset label{cursor:pointer}
+fieldset input{position:absolute;opacity:0;width:1px;height:1px}
+fieldset span{display:block;min-width:56px;text-align:center;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:600;background:var(--ink)}
+fieldset input:checked+span{background:var(--cta);border-color:var(--cta)}
+fieldset input:focus-visible+span{outline:3px solid #fff;outline-offset:2px}
+.sum{display:flex;justify-content:space-between;font-weight:700;font-size:18px;border-top:1px solid var(--line);padding-top:14px}
+.err{color:#FF9A9D;font-size:14px;min-height:20px}
+.note{color:var(--mut);font-size:14px;text-align:center;margin-top:10px}
+.ok{text-align:center;padding:16px 0}.ok h3{font-size:24px;margin-bottom:6px}
+details{border-bottom:1px solid #E6E8F0;padding:14px 0}
+summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--cta);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:#586079;margin-top:8px}
+footer{background:var(--ink);color:var(--mut);text-align:center;font-size:14px;padding:26px 0 36px}
+.bar{position:fixed;inset:auto 0 0 0;background:#fff;border-top:1px solid #E6E8F0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:14px;z-index:20;transition:transform .2s;box-shadow:0 -4px 16px rgba(5,9,28,.08)}
+.bar.hide{transform:translateY(120%)}
+.bar .p{font-weight:700;font-size:20px;white-space:nowrap}
+.bar .btn{min-height:48px;padding:10px 18px;font-size:17px}
+[hidden]{display:none!important}
+@media(min-width:820px){
+ .hg{grid-template-columns:1.1fr 1fr;align-items:center;gap:48px}
+ .dg{grid-template-columns:repeat(3,1fr)}
+ .trust{grid-template-columns:repeat(3,1fr)}
+ .trust li{border-bottom:0;border-inline-end:1px solid #E6E8F0}.trust li:last-child{border:0}
+ body{padding-bottom:0}.bar{display:none}
+}
+/* edit panel */
+#ep{position:fixed;inset:0 auto 0 0;width:min(420px,100%);background:#fff;color:var(--ink);z-index:50;overflow:auto;padding:16px;box-shadow:4px 0 24px rgba(0,0,0,.25);direction:rtl}
+#ep h3{margin-bottom:10px}
+#ep .f{margin-bottom:12px;color:var(--ink)}
+#ep input,#ep select,#ep textarea{background:#fff;color:var(--ink);border-color:#C9CEDF}
+#ep .row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+#ep .btn{width:auto;flex:1;min-height:44px;font-size:15px;padding:8px 12px}
+#ep .g{background:#E6E8F0;color:var(--ink)}
+#etog{position:fixed;bottom:90px;inset-inline-start:12px;z-index:60;background:#000;color:#fff;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div class="bar" id="bar"><div class="p" id="bp"></div><a class="btn js-cta" href="#order">اطلب الآن</a></div>
+<script src="config.js"></script>
+<script>
+(function(){
+const EDIT=/[?&]edit/.test(location.search);
+let C=CONFIG;
+if(EDIT){try{const s=JSON.parse(localStorage.getItem("hcfg")||"null");if(s)C=Object.assign({},CONFIG,s)}catch(e){}}
+const $=i=>document.getElementById(i);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>Number(n).toLocaleString("en-US")+" "+C.currencySymbol;
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
+
+/* ---- Meta Pixel ---- */
+window.fbq=window.fbq||function(){};
+if(!EDIT&&CONFIG.pixelId){
+ !function(f,b,e,v,n,t,s){if(f.fbq&&f.fbq.callMethod)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init',CONFIG.pixelId);fbq('track','PageView');
+}else if(!EDIT)console.warn("Meta Pixel غير مفعّل: pixelId فاضي");
+function track(ev,x){if(EDIT)return;try{fbq("track",ev,Object.assign({content_name:C.productName,content_ids:[C.productName],content_type:"product",value:Number(C.price),currency:C.currencyCode},x||{}),{eventID:uid()})}catch(e){}}
+
+/* ---- render ---- */
+let obs;
+function render(){
+ const form=C.orderMode!=="link";
+ const disc=C.oldPrice>C.price?Math.round((1-C.price/C.oldPrice)*100):0;
+ document.title=C.productName+(C.brandName?" | "+C.brandName:"");
+ $("bp").textContent=money(C.price);
+ $("app").innerHTML=`
+ ${C.announcement?`<div class="ann">${esc(C.announcement)}</div>`:""}
+ <header class="top">${esc(C.brandName)}</header>
+ <section class="hero"><div class="wrap hg">
+  <div class="shot"><img src="${esc(C.image)}" alt="${esc(C.productName)} ${esc(C.colorName)}" width="1100" height="1100">${disc?`<span class="badge">وفّر ${disc}%</span>`:""}</div>
+  <div>
+   <h1>${esc(C.productName)}</h1><p class="tag">${esc(C.tagline)}</p>
+   <div class="pr"><b>${Number(C.price).toLocaleString("en-US")}</b><span>${esc(C.currencySymbol)}</span>${C.oldPrice>C.price?`<s>${money(C.oldPrice)}</s>`:""}</div>
+   <p class="szl">اللون: ${esc(C.colorName)} · المقاسات: ${C.sizes.map(esc).join(" / ")}</p>
+   <a class="btn js-cta" href="#order">اطلب الآن</a>
+   <ul class="trust">${C.trust.map(t=>`<li><b>${esc(t[0])}</b><span>${esc(t[1]||"")}</span></li>`).join("")}</ul>
+  </div></div></section>
+ ${C.details.length?`<section class="dark"><div class="wrap"><h2>تفاصيل تفرق</h2><div class="dg">${C.details.map(d=>`<div class="dt"><div class="im" style="background-image:url('${esc(C.image)}');background-position:${Number(d[2])||50}% ${Number(d[3])||50}%"></div><b>${esc(d[0])}</b><p>${esc(d[1]||"")}</p></div>`).join("")}</div></div></section>`:""}
+ ${C.reviews.length?`<section class="sec"><div class="wrap"><h2>آراء العملاء</h2>${C.reviews.map(r=>`<div class="rev"><p>${esc(r[1])}</p><small>${esc(r[0])}</small></div>`).join("")}</div></section>`:""}
+ <section id="order"><div class="wrap card">
+  <h2>${form?"اطلب دلوقتي":"جاهز تطلب؟"}</h2>
+  ${form?`<form id="of" novalidate>
+   <fieldset><legend>المقاس</legend>${C.sizes.map(s=>`<label><input type="radio" name="size" value="${esc(s)}"><span>${esc(s)}</span></label>`).join("")}</fieldset>
+   <label class="f">الاسم<input type="text" name="name" placeholder="الاسم بالكامل" autocomplete="name"></label>
+   <label class="f">رقم الموبايل<input type="tel" name="phone" placeholder="01xxxxxxxxx" inputmode="tel" autocomplete="tel"></label>
+   <label class="f">المحافظة<select name="gov"><option value="">اختار المحافظة</option>${GOV.map(g=>`<option>${g}</option>`).join("")}</select></label>
+   <label class="f">العنوان بالتفصيل<input type="text" name="address" placeholder="الشارع، رقم المبنى، علامة مميزة" autocomplete="street-address"></label>
+   <div class="sum"><span>الإجمالي</span><span>${money(C.price)}</span></div>
+   <div class="err" id="fe" role="alert"></div>
+   <button class="btn" type="submit">تأكيد الطلب</button></form>`
+  :`<div class="sum"><span>${esc(C.productName)}</span><span>${money(C.price)}</span></div><a class="btn js-cta" href="#order" style="margin-top:18px">اطلب الآن</a>`}
+  <p class="note">${esc(C.orderNote)}${form?"":" · هتختار المقاس وتكمل الطلب في الصفحة الجاية."}</p>
+ </div></section>
+ <section class="sec"><div class="wrap card" style="max-width:720px"><h2>أسئلة شائعة</h2>${C.faq.map(q=>`<details><summary>${esc(q[0])}</summary><p>${esc(q[1]||"")}</p></details>`).join("")}</div></section>
+ <footer>${esc(C.brandName)}${C.brandName?" — ":""}${esc(C.footerText)}</footer>`;
+ if(obs)obs.disconnect();
+ if("IntersectionObserver"in window){obs=new IntersectionObserver(e=>$("bar").classList.toggle("hide",e[0].isIntersecting),{threshold:.15});obs.observe($("order"))}
+}
+const GOV=["القاهرة","الجيزة","الإسكندرية","القليوبية","الشرقية","الدقهلية","الغربية","المنوفية","البحيرة","كفر الشيخ","دمياط","بورسعيد","الإسماعيلية","السويس","الفيوم","بني سويف","المنيا","أسيوط","سوهاج","قنا","الأقصر","أسوان","البحر الأحمر","الوادي الجديد","مطروح","شمال سيناء","جنوب سيناء"];
+render();track("ViewContent");
+
+/* ---- events ---- */
+let started=false;
+document.addEventListener("focusin",e=>{if(e.target.closest("#of")&&!started){started=true;track("InitiateCheckout")}});
+document.addEventListener("click",e=>{
+ const a=e.target.closest(".js-cta");if(!a||C.orderMode!=="link")return;
+ if(a.getAttribute("href")==="#order"&&!e.target.closest("#order")&&!e.target.closest("#bar")&&!e.target.closest(".hero"))return;
+ if(a.closest(".hero")||a.closest("#bar")){return}  // الأزرار العلوية بتنزّل لقسم الطلب
+ e.preventDefault();
+ if(EDIT)return;
+ if(!C.easyOrdersUrl){alert("حط رابط EasyOrders في وضع التعديل أو في config.js");return}
+ track("InitiateCheckout");setTimeout(()=>{location.href=C.easyOrdersUrl},300);
+});
+const dg=s=>s.replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d));
+let busy=false;
+document.addEventListener("submit",async e=>{
+ if(e.target.id!=="of")return;e.preventDefault();if(busy)return;
+ const f=e.target,er=$("fe");er.textContent="";
+ const size=(f.querySelector("input[name=size]:checked")||{}).value,name=f.name.value.trim(),phone=dg(f.phone.value.replace(/\s/g,"")),gov=f.gov.value,address=f.address.value.trim();
+ if(!size)return er.textContent="اختار المقاس.";
+ if(name.length<3)return er.textContent="اكتب الاسم بالكامل.";
+ if(!/^01[0125][0-9]{8}$/.test(phone))return er.textContent="رقم الموبايل لازم يكون 11 رقم ويبدأ بـ 01.";
+ if(!gov)return er.textContent="اختار المحافظة.";
+ if(address.length<8)return er.textContent="اكتب العنوان بالتفصيل.";
+ if(EDIT){er.textContent="وضع التعديل: الإرسال متوقف.";return}
+ busy=true;const b=f.querySelector("button");b.disabled=true;b.textContent="جاري الإرسال...";
+ const o={product:C.productName,color:C.colorName,size,price:C.price,name,phone,gov,address,time:new Date().toISOString()};
+ track(C.formEvent,{content_ids:[C.productName+"-"+size]});
+ try{
+  if(C.orderMode==="whatsapp"){
+   if(!C.whatsappNumber)throw 0;
+   const m=`طلب جديد\nالمنتج: ${o.product} (${o.color})\nالمقاس: ${size}\nالسعر: ${money(C.price)}\nالاسم: ${name}\nالموبايل: ${phone}\nالمحافظة: ${gov}\nالعنوان: ${address}`;
+   setTimeout(()=>{location.href="https://wa.me/"+C.whatsappNumber+"?text="+encodeURIComponent(m)},350);
+  }else{
+   if(!C.webhookUrl)throw 0;
+   await fetch(C.webhookUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(o)});
+  }
+  f.hidden=true;f.insertAdjacentHTML("afterend",'<div class="ok"><h3>تم استلام طلبك</h3><p>هنكلمك على الرقم اللي كتبته لتأكيد الطلب.</p></div>');
+ }catch(x){busy=false;b.disabled=false;b.textContent="تأكيد الطلب";er.textContent="حصلت مشكلة في الإرسال. تأكد من الإعدادات وجرب تاني."}
+});
+
+/* ---- edit mode ---- */
+if(EDIT){
+ const F=[["brandName","اسم البراند"],["pixelId","Pixel ID (بيشتغل بعد الرفع على الموقع)"],["announcement","الشريط اللي فوق"],["productName","اسم المنتج"],["tagline","وصف قصير"],["price","السعر","n"],["oldPrice","السعر قبل الخصم (0 = مخفي)","n"],["colorName","اللون"],["sizes","المقاسات (افصل بفاصلة)","a"],["image","اسم ملف الصورة"],["orderMode","طريقة الطلب","s"],["easyOrdersUrl","رابط المنتج في EasyOrders"],["whatsappNumber","رقم واتساب (201xxxxxxxxx)"],["webhookUrl","رابط Webhook"],["formEvent","حدث الفورم (Purchase أو Lead)"],["orderNote","ملاحظة الدفع"],["footerText","نص الفوتر"],
+ ["trust","مميزات سريعة: سطر لكل ميزة — العنوان | الوصف","l"],["details","التفاصيل: العنوان | الوصف | x | y","l"],["reviews","آراء العملاء: الاسم | الرأي","l"],["faq","الأسئلة: السؤال | الإجابة","l"]];
+ const ser=(k,t)=>t==="a"?C[k].join("، "):t==="l"?C[k].map(r=>r.join(" | ")).join("\n"):C[k];
+ const ep=document.createElement("div");ep.id="ep";ep.hidden=false;
+ ep.innerHTML='<h3>وضع التعديل</h3><p style="font-size:14px;color:#586079;margin-bottom:12px">عدّل وشوف النتيجة فورًا. لما تخلص حمّل config.js وارفعه على GitHub مكان القديم.</p>'+F.map(([k,l,t])=>{
+  const v=esc(ser(k,t));
+  return `<label class="f">${l}`+(t==="s"?`<select data-k="${k}"><option value="link">زرار يودّي على EasyOrders</option><option value="whatsapp">فورم على واتساب</option><option value="webhook">فورم يبعت لرابط</option></select>`:t==="l"?`<textarea data-k="${k}" data-t="l" rows="5">${v}</textarea>`:`<input data-k="${k}" data-t="${t||""}" type="${t==="n"?"number":"text"}" value="${v}">`)+"</label>";
+ }).join("")+'<div class="row"><button class="btn" id="dl">تحميل config.js</button><button class="btn g" id="cp">نسخ</button><button class="btn g" id="rs">مسح تعديلاتي</button></div>';
+ document.body.append(ep);
+ ep.querySelector("select").value=C.orderMode;
+ const tog=document.createElement("button");tog.id="etog";tog.textContent="إخفاء/إظهار التعديل";tog.onclick=()=>ep.hidden=!ep.hidden;document.body.append(tog);
+ const out=()=>"const CONFIG = "+JSON.stringify(C,null,2)+";\n";
+ ep.addEventListener("input",e=>{
+  const el=e.target,k=el.dataset.k;if(!k)return;
+  const t=el.dataset.t,v=el.value;
+  if(t==="n")C[k]=Number(v)||0;
+  else if(t==="a")C[k]=v.split(/[,،]/).map(s=>s.trim()).filter(Boolean);
+  else if(t==="l")C[k]=v.split("\n").map(r=>r.split("|").map(s=>s.trim())).filter(r=>r[0]).map(r=>k==="details"?[r[0],r[1]||"",Number(r[2])||50,Number(r[3])||50]:r);
+  else C[k]=v;
+  localStorage.setItem("hcfg",JSON.stringify(C));render();
+ });
+ $("dl").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([out()],{type:"text/javascript"}));a.download="config.js";a.click()};
+ $("cp").onclick=()=>navigator.clipboard.writeText(out()).then(()=>{$("cp").textContent="تم النسخ"});
+ $("rs").onclick=()=>{localStorage.removeItem("hcfg");location.reload()};
+}
+})();
+</script>
+</body>
+</html>
